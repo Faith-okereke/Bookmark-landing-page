@@ -1,0 +1,40 @@
+import React from "react";
+export default function Download() {
+  const downloadElements = [
+    {
+      img: "src/assets/logo-chrome.svg",
+      heading: "Add to Chrome",
+      version: "Minimum version 62",
+      add: "Add & Install Extension",
+    },
+    {
+      img: "src/assets/logo-firefox.svg",
+      heading: "Add to Firefox",
+      version: "Minimum version 55",
+      add: "Add & Install Extension",
+    },
+    {
+      img: "src/assets/logo-opera.svg",
+      heading: "Add to Opera",
+      version: "Minimum version 46",
+      add: "Add & Install Extension",
+    },
+  ];
+  return (
+    <div className="flex md:flex-row flex-col items-center justify-center gap-5 text-center px-6 md:px-0">
+      {downloadElements.map((item) => (
+        <div className="rounded-lg shadow-lg md:p-4 p-6 flex flex-col gap-3 bg-white items-center justify-center">
+          <div className=" flex flex-col items-center gap-1">
+            <img className="w-2/3" src={item.img} alt="" />
+            <h2 className="text-lg text-black font-bold">{item.heading}</h2>
+            <p className="text-grayishBlue text-sm">{item.version}</p>
+          </div>
+          <div className="border-dotted border-t-4 border-t-grayishBlue w-full mt-3"></div>
+          <button className="bg-softBlue md:px-5 p-3 md:py-2 border-2 border-transparent rounded-md text-white text-sm mt-2 hover:bg-white hover:text-softBlue hover:border-softBlue ">
+            {item.add}
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+}
