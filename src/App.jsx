@@ -17,7 +17,7 @@ function App() {
         {/* Hero Section */}
         <div className="flex justify-between lg:flex-row flex-col items-center w-full">
           <div className="flex flex-col gap-5 order-last md:order-first lg:text-justify">
-            <h1 className="text-4xl font-bold text-veryDarkBlue lg:w-[70%]">
+            <h1 className="md:text-4xl text-3xl font-bold text-veryDarkBlue lg:w-[70%] w-full">
               A Simple Bookmark Manager
             </h1>
             <p className="text-grayishBlue text-sm md:w-[70%] ">
