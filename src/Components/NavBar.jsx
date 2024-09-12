@@ -22,7 +22,7 @@ export default function NavBar() {
           <li>
             <a
               className="uppercase  text-grayishBlue hover:text-softRed transition-transform"
-              href=""
+              href="#"
             >
               Features
             </a>
@@ -30,7 +30,7 @@ export default function NavBar() {
           <li>
             <a
               className="uppercase text-grayishBlue hover:text-softRed transition-transform"
-              href=""
+              href="#"
             >
               {" "}
               Pricing
@@ -39,7 +39,7 @@ export default function NavBar() {
           <li>
             <a
               className="uppercase text-grayishBlue hover:text-softRed  transition-transform"
-              href=""
+              href="#"
             >
               {" "}
               Contact
@@ -50,9 +50,8 @@ export default function NavBar() {
           </button>
         </ul>
       </div>
-      {nav && (
         <div
-          className={`md:hidden fixed top-0 bg-veryDarkBlue bg-opacity-80 h-screen w-screen pt-12 transform transition-transform duration-300 ease-in-out ${
+          className={`md:hidden fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 h-screen w-screen pt-16 transform transition-transform duration-300 ease-in-out ${
             nav ? "translate-y-0" : "-translate-y-full"
           }`}
         >
@@ -66,7 +65,7 @@ export default function NavBar() {
             <li className="border-t-[1px] border-t-grayishBlue w-[350px] text-center py-5">
               <a
                 className="uppercase  text-grayishBlue hover:text-softRed transition-transform"
-                href=""
+                href="#"
               >
                 Features
               </a>
@@ -74,7 +73,7 @@ export default function NavBar() {
             <li className="border-t-[1px] border-t-grayishBlue w-[350px] text-center py-5">
               <a
                 className="uppercase text-grayishBlue hover:text-softRed transition-transform"
-                href=""
+                href="#"
               >
                 {" "}
                 Pricing
@@ -83,7 +82,7 @@ export default function NavBar() {
             <li className="border-t-[1px] border-t-grayishBlue w-[350px] text-center py-5">
               <a
                 className="uppercase text-grayishBlue hover:text-softRed  transition-transform"
-                href=""
+                href="#"
               >
                 {" "}
                 Contact
@@ -94,7 +93,6 @@ export default function NavBar() {
             </button>
           </ul>
         </div>
-      )}
     </div>
   );
 }
