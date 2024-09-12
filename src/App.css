@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 .flip {
     transform: rotate(180deg);
   }
   .error{
     border: 2px solid hsl(0, 94%, 66%);
+  }
+  .rubik-whole {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
