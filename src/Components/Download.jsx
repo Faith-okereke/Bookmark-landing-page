@@ -1,20 +1,23 @@
 import React from "react";
+import chrome from "../assets/logo-chrome.svg"
+import firefox from "../assets/logo-firefox.svg"
+import opera from "../assets/logo-opera.svg"
 export default function Download() {
   const downloadElements = [
     {
-      img: "src/assets/logo-chrome.svg",
+      img: chrome,
       heading: "Add to Chrome",
       version: "Minimum version 62",
       add: "Add & Install Extension",
     },
     {
-      img: "src/assets/logo-firefox.svg",
+      img: firefox,
       heading: "Add to Firefox",
       version: "Minimum version 55",
       add: "Add & Install Extension",
     },
     {
-      img: "src/assets/logo-opera.svg",
+      img: opera,
       heading: "Add to Opera",
       version: "Minimum version 46",
       add: "Add & Install Extension",
