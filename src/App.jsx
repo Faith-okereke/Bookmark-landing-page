@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div>
-      <div className="md:px-24 px-8 md:py- py-5">
-        <NavBar />
+      <NavBar />
+      <div className="md:px-24 px-8 md:py-0 py-5">
         {/* Hero Section */}
-        <div className="flex justify-between md:flex-row flex-col items-center w-full">
-          <div className="flex flex-col gap-5 order-2 md:order-1 text-center md:text-justify">
-            <h1 className="text-4xl font-bold text-veryDarkBlue md:w-[70%]">
+        <div className="flex justify-between lg:flex-row flex-col items-center w-full">
+          <div className="flex flex-col gap-5 order-last md:order-first lg:text-justify">
+            <h1 className="text-4xl font-bold text-veryDarkBlue lg:w-[70%]">
               A Simple Bookmark Manager
             </h1>
             <p className="text-grayishBlue text-sm md:w-[70%] ">
@@ -34,7 +34,7 @@ function App() {
               </button>
             </div>
           </div>
-          <img className="md:w-[550px] w-[700px]" src={herofirst} alt="" />
+          <img className="md:w-[550px] w-[700px] md:mt-20 lg:mt-0" src={herofirst} alt="" />
         </div>
 
         {/* Features Section */}

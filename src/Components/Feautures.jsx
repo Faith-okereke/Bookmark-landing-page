@@ -45,7 +45,7 @@ export default function Feautures() {
           </div>
         ))}
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-center gap-16 py-16">
+      <div className="flex lg:flex-row flex-col items-center justify-center gap-16 py-16">
         <img className="w-[400px]" src={featureData[activeTab].image} alt="" />
         <div className="flex flex-col gap-5 items-start">
           <h2 className="text-2xl text-veryDarkBlue font-bold ">

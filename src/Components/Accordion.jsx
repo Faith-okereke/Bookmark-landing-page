@@ -24,24 +24,31 @@ export default function Accordion() {
     },
   ];
   const [accordion, setAccordion] = useState(false);
-  const toggleAccordion = () => {
-    setAccordion(!accordion);
+  const toggleAccordion = (index) => {
+    setAccordion(accordion === index ? null : index);
   };
   return (
     <div className="flex justify-center flex-col border-b-2 border-b-grayishBlue">
-      {accordionQA.map((item) => (
-        <div>
+      {accordionQA.map((item, index) => (
+        <div  key={index}>
           <div
             className="py-3 border-t-2 border-t-grayishBlue flex items-center justify-between px-2 gap-24 cursor-pointer"
-            onClick={toggleAccordion}
+            onClick={() => toggleAccordion(index)}
           >
             <p className="hover:text-softRed text-black">{item.question}</p>
-            <img className={accordion ? "flip" : ""} src={arrowdown} alt="" />
+            <img
+              className={`transition-transform duration-300 ${
+                accordion===index ? `flip` : ``
+              }`}
+              src={arrowdown}
+              alt=""
+            />
           </div>
-          {accordion && <p className="py-3 max-w-[350px]">{item.answer}</p>}
+          {accordion === index && (
+            <p className="py-3 px-2 max-w-[350px]">{item.answer}</p>
+          )}
         </div>
       ))}
-
     </div>
   );
 }
