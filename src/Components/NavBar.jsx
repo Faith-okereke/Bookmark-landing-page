@@ -51,7 +51,7 @@ export default function NavBar() {
         </ul>
       </div>
         <div
-          className={`md:hidden fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 h-screen w-screen pt-16 transform transition-transform duration-300 ease-in-out z-30 ${
+          className={`md:hidden fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 h-screen w-full pt-16 transform transition-transform duration-300 ease-in-out z-30 ${
             nav ? "translate-y-0" : "-translate-y-full"
           }`}
         >
@@ -88,7 +88,7 @@ export default function NavBar() {
                 Contact
               </a>
             </li>
-            <button className="bg-transparent w-[350px] px-5 py-2 rounded-md border-white border-2 text-white uppercase hover:bg-white transition-all">
+            <button className="bg-transparent w-[350px] px-5 py-2 rounded-md border-white border-2 text-white uppercase hover:bg-transparent transition-all">
               Login
             </button>
           </ul>
