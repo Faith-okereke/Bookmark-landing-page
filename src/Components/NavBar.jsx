@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className="md:px-24 md:py-12 p-0">
       <div className="flex justify-between md:gap-12 lg:gap-0  pb-16 lg:px-8 items-center">
-        <img className={`m-6 md:m-0 ${nav? `z-10 fill-white` :`z-0`}`} src={logo} alt="" />
+        <img className={`m-6 md:m-0 ${nav? `z-40 fill-white` :`z-0`}`} src={logo} alt="" />
         <img
           onClick={() => setNav(true)}
           className="md:hidden m-6"
@@ -51,7 +51,7 @@ export default function NavBar() {
         </ul>
       </div>
         <div
-          className={`md:hidden fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 h-screen w-screen pt-16 transform transition-transform duration-300 ease-in-out ${
+          className={`md:hidden fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 h-screen w-screen pt-16 transform transition-transform duration-300 ease-in-out z-30 ${
             nav ? "translate-y-0" : "-translate-y-full"
           }`}
         >
