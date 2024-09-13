@@ -35,7 +35,7 @@ export default function Accordion() {
             className="py-3 border-t-2 border-t-grayishBlue flex items-center justify-between px-2 gap-24 cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
-            <p className="hover:text-softRed text-black">{item.question}</p>
+            <p className="hover:text-softRed text-black flex-nowrap md:flex-wrap">{item.question}</p>
             <img
               className={`transition-transform duration-300 ${
                 accordion===index ? `flip` : ``

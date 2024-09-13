@@ -46,7 +46,15 @@ export default function Feautures() {
         ))}
       </div>
       <div className="flex lg:flex-row flex-col items-center justify-center gap-16 py-16">
-        <img className="w-[400px]" src={featureData[activeTab].image} alt="" />
+        <div className="relative">
+          <img
+            className="w-[400px]"
+            src={featureData[activeTab].image}
+            alt=""
+          />
+          <div className="md:w-[600px] md:h-[200px] w-[220px] h-[180px] rounded-r-full bg-softBlue absolute md:-bottom-16 -bottom-8 -left-12 -z-10 md:-left-96"></div>
+        </div>
+
         <div className="flex flex-col gap-5 items-start">
           <h2 className="text-2xl text-veryDarkBlue font-bold ">
             {featureData[activeTab].heading}

@@ -1,7 +1,7 @@
 import React from "react";
-import chrome from "../assets/logo-chrome.svg"
-import firefox from "../assets/logo-firefox.svg"
-import opera from "../assets/logo-opera.svg"
+import chrome from "../assets/logo-chrome.svg";
+import firefox from "../assets/logo-firefox.svg";
+import opera from "../assets/logo-opera.svg";
 export default function Download() {
   const downloadElements = [
     {
@@ -25,8 +25,12 @@ export default function Download() {
   ];
   return (
     <div className="flex md:flex-row flex-col items-center justify-center gap-5 text-center px-6 md:px-0">
-      {downloadElements.map((item,index) => (
-        <div key={index} className="rounded-lg shadow-lg md:p-4 p-6 flex flex-col gap-3 bg-white items-center justify-center">
+      {downloadElements.map((item, index) => (
+        <div
+          key={index}
+          className="rounded-lg shadow-lg md:p-4 p-6 flex flex-col gap-3 bg-white items-center justify-center"
+          style={{ marginTop: `${index * 32}px` }}
+        >
           <div className=" flex flex-col items-center gap-1">
             <img className="w-2/3" src={item.img} alt="" />
             <h2 className="text-lg text-black font-bold">{item.heading}</h2>
