@@ -52,7 +52,7 @@ export default function Feautures() {
             src={featureData[activeTab].image}
             alt=""
           />
-          <div className="md:w-[600px] md:h-[200px] w-[220px] h-[180px] rounded-r-full bg-softBlue absolute md:-bottom-16 -bottom-8 -left-12 -z-10 md:-left-96"></div>
+          <div className="lg:w-[600px] lg:h-[200px] w-[220px] h-[150px] md:w-[520px] md:h-[220px] rounded-r-full bg-softBlue absolute md:-bottom-16 -bottom-8 -left-12 -z-10 md:-left-96"></div>
         </div>
 
         <div className="flex flex-col gap-5 items-start">

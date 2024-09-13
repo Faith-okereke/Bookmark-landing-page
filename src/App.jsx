@@ -17,7 +17,7 @@ function App() {
         {/* Hero Section */}
         <div className="flex justify-between lg:flex-row flex-col items-center w-full">
           <div className="flex flex-col gap-5 order-last md:order-first lg:text-justify">
-            <h1 className="md:text-4xl text-2xl font-bold text-veryDarkBlue lg:w-[70%] w-full md:text-left text-center">
+            <h1 className="md:text-4xl text-[26px] pt-12 md:pt-0 font-bold text-veryDarkBlue lg:w-[70%] w-full md:text-left text-center">
               A Simple Bookmark Manager
             </h1>
             <p className="text-grayishBlue text-sm md:w-[70%] ">
@@ -36,7 +36,7 @@ function App() {
           </div>
           <div className="relative  md:mt-20 lg:mt-0">
           <img className="md:w-[550px] w-[700px]" src={herofirst} alt="" />
-          <div className="md:w-[600px] md:h-[230px] w-[200px] h-[120px] rounded-l-full bg-softBlue absolute md:-bottom-6 bottom-0 -right-12 -z-10 md:-right-64"></div>
+          <div className="lg:w-[600px] lg:h-[230px] md:w-[520px] md:h-[300px] w-[200px] h-[120px] rounded-l-full bg-softBlue absolute md:-bottom-6 bottom-0 -right-12 -z-10 md:-right-64"></div>
           </div>
          
         </div>
